@@ -155,6 +155,37 @@
       ]
     },
     {
+      "titulo": "Avril Lavigne",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#DC143C",
+      "videos": [
+        {
+          "titulo": "Ophelia",
+          "url": "https://www.youtube.com/watch?v=pTOC_q0NLTk"
+        },
+        {
+          "titulo": "Cleopatra",
+          "url": "https://www.youtube.com/watch?v=aN5s9N_pTUs"
+        },
+        {
+          "titulo": "Sleep On The Floor",
+          "url": "https://www.youtube.com/watch?v=v4pi1LxuDHc"
+        },
+        {
+          "titulo": "Angela",
+          "url": "https://www.youtube.com/watch?v=_II0fc7hgNY"
+        },
+        {
+          "titulo": "My Eyes",
+          "url": "https://www.youtube.com/watch?v=rAufElXi9lw"
+        },
+        {
+          "titulo": "The Ballad Of Cleopatra",
+          "url": "https://www.youtube.com/watch?v=tXsQJhoauxc&feature=emb_title"
+        }     
+      ]
+    },
+    {
       "titulo": "The lumineers",
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#ad9e77",
