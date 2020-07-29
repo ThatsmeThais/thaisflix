@@ -1,183 +1,299 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      },
-      "videos": [
-        {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
-        },
-        {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-        },
-        {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
-        },
-        {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-        },
-        {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-        },
-        {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
-      ]
-    },
-    {
-      "titulo": "Back End",
-      "cor": "#00C86F",
+      "titulo": "Brasileiras calminhas",
+      "cor": "#4682B4",
       "link_extra": {
         "text": "Cursos de Back End na Alura",
         "url": "https://www.alura.com.br/cursos-online-programacao"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Avril Lavigne - Here's to Never Growing Up",
+          "url": "https://www.youtube.com/watch?v=sXd2WxoOP5g"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Dançando",
+          "url": "https://www.youtube.com/watch?v=vOL-AvxD9w4"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Perco a Hora",
+          "url": "https://www.youtube.com/watch?v=VJlrdrOOe_0"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
+          "titulo": "Recaída",
+          "url": "https://www.youtube.com/watch?v=EIJZwlESihg"
+        },
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Me Conta Da Tua Janela",
+          "url": "https://www.youtube.com/watch?v=hC0EQGIcbUI"
+        },
+        {
+          "titulo": "Eu Feat. Você",
+          "url": "https://www.youtube.com/watch?v=PKSRloC9WeM"
+        },
+        {
+          "titulo": "Cida [Elas por Elas]",
+          "url": "https://www.youtube.com/watch?v=fRp80Rg1SII"
+        },
+        {
+          "titulo": "Apaga a Luz",
+          "url": "https://www.youtube.com/watch?v=7o1FzLpRUKQ"
+        },
+        {
+          "titulo": "Eu Te Amo",
+          "url": "https://www.youtube.com/watch?v=6MshQhJcZt0"
+        },
+        {
+          "titulo": "Que Seja Pra Ficar",
+          "url": "https://www.youtube.com/watch?v=PF0iJc-Nlgg"
+        },
+        {
+          "titulo": "Dizeres",
+          "url": "https://www.youtube.com/watch?v=lxhqCcrnTv4"
+        },
+        {
+          "titulo": "Amor Livre",
+          "url": "https://www.youtube.com/watch?v=y1ARwYW3DKI"
+        },
+        {
+          "titulo": "Meu Olhar",
+          "url": "https://www.youtube.com/watch?v=pYcQHiEU5ms"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Brasileiras",
       "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Ninguém Dá Certo Cmg",
+          "url": "https://www.youtube.com/watch?v=Ma6GPYkOs6k"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Será",
+          "url": "https://www.youtube.com/watch?v=ubnmMTO8EEw"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Canção Infantil",
+          "url": "https://www.youtube.com/watch?v=Ri-eF5PJ2X0"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Paisagem",
+          "url": "https://www.youtube.com/watch?v=ceFhxenW40E"
+        }, 
+        {
+          "titulo": "Elevação Mental",
+          "url": "https://www.youtube.com/watch?v=npGrq2lFmls"
+        },
+        {
+          "titulo": "Ilusão",
+          "url": "https://www.youtube.com/watch?v=3DqKscyJij0"
+        },
+        {
+          "titulo": "Eu Tô Gostando De Um Menino Aí",
+          "url": "https://www.youtube.com/watch?v=A_nHa4Cv8pU"
+        },
+        {
+          "titulo": "Essa Eu Fiz Pro Nosso Amor",
+          "url": "https://www.youtube.com/watch?v=JdKDGAZaO9Y"
+        },
+        {
+          "titulo": "Baila Mais",
+          "url": "https://www.youtube.com/watch?v=D77iVvBO844"
         }
       ]
     },
     {
-      "titulo": "Filmes",
+      "titulo": "Poesia Acústica",
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Poesia Acústica 1 - Descompasso do Compasso",
+          "url": "https://www.youtube.com/watch?v=MZmi00sS-2Y"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Poesia Acústica 2 - Sobre Nós",
+          "url": "https://www.youtube.com/watch?v=bD6ifecX6rs"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Poesia Acústica 3 - Capricorniana",
+          "url": "https://www.youtube.com/watch?v=DjNqxTODmuc"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Poesia Acústica 4 - Todo Mundo Odeia Acústico",
+          "url": "https://www.youtube.com/watch?v=aoH4kc_gsGo"
+        },
+        {
+          "titulo": "Poesia Acústica 5 - Teu Popô",
+          "url": "https://www.youtube.com/watch?v=VeJXVI7_oIg"
+        },
+        {
+          "titulo": "Poesia Acústica 6 - Era Uma Vez",
+          "url": "https://www.youtube.com/watch?v=jK2k1P56Cno"
+        },
+        {
+          "titulo": "Poesia Acústica 7 - Céu Azul",
+          "url": "https://www.youtube.com/watch?v=G4eTjFvp8CU"
+        },
+        {
+          "titulo": "Poesia Acústica 8 - Amor e Samba",
+          "url": "https://www.youtube.com/watch?v=NlXU0kQ1_3w"
+        },
+        {
+          "titulo": "Poesia Acústica 9 - Melhor Forma",
+          "url": "https://www.youtube.com/watch?v=e1tZUSriYM8"
+        },
+        {
+          "titulo": "Poesia Acústica Paris",
+          "url": "https://www.youtube.com/watch?v=z6_tNgUEZe4"
+        },
+        {
+          "titulo": "Poesia Acústica Uruguay",
+          "url": "https://www.youtube.com/watch?v=FQpoVO2u1Bs"
         }
       ]
     },
     {
-      "titulo": "Games",
+      "titulo": "The lumineers",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#ad9e77",
+      "videos": [
+        {
+          "titulo": "Ophelia",
+          "url": "https://www.youtube.com/watch?v=pTOC_q0NLTk"
+        },
+        {
+          "titulo": "Cleopatra",
+          "url": "https://www.youtube.com/watch?v=aN5s9N_pTUs"
+        },
+        {
+          "titulo": "Sleep On The Floor",
+          "url": "https://www.youtube.com/watch?v=v4pi1LxuDHc"
+        },
+        {
+          "titulo": "Angela",
+          "url": "https://www.youtube.com/watch?v=_II0fc7hgNY"
+        },
+        {
+          "titulo": "My Eyes",
+          "url": "https://www.youtube.com/watch?v=rAufElXi9lw"
+        },
+        {
+          "titulo": "The Ballad Of Cleopatra",
+          "url": "https://www.youtube.com/watch?v=tXsQJhoauxc&feature=emb_title"
+        }     
+      ]
+    },
+    {
+      "titulo": "Mix Internacional",
       "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Classic",
+          "url": "https://www.youtube.com/watch?v=4Ba_qTPA4Ds"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "Sweater Weather",
+          "url": "https://www.youtube.com/watch?v=GCdwKhTtNNw"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "Girls Like Girls",
+          "url": "https://www.youtube.com/watch?v=I0MT8SwNa_U"
         },
         {
-          "titulo": "Resident Evil 8",
-          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+          "titulo": "Only You",
+          "url": "https://www.youtube.com/watch?v=T2sO8gK2IKk"
         },
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "Close",
+          "url": "https://www.youtube.com/watch?v=XgJFqVvb2Ws"
+        },
+        {
+          "titulo": "Habits",
+          "url": "https://www.youtube.com/watch?v=oh2LWWORoiM"
+        },
+        {
+          "titulo": "Dusk Till Dawn",
+          "url": "https://www.youtube.com/watch?v=tt2k8PGm-TI"
+        },
+        {
+          "titulo": "IDGAF",
+          "url": "https://www.youtube.com/watch?v=Mgfe5tIwOj0"
+        },
+        {
+          "titulo": "The Greatest",
+          "url": "https://www.youtube.com/watch?v=GKSRyLdjsPA"
+        },
+        {
+          "titulo": "Call Out My Name",
+          "url": "https://www.youtube.com/watch?v=M4ZoCHID9GI"
+        },
+        {
+          "titulo": "Ride",
+          "url": "https://www.youtube.com/watch?v=Pw-0pbY9JeU"
+        },
+        {
+          "titulo": "Paradise",
+          "url": "https://www.youtube.com/watch?v=1G4isv_Fylg"
+        },
+        {
+          "titulo": "Pompeii",
+          "url": "https://www.youtube.com/watch?v=F90Cw4l-8NY"
+        },
+        {
+          "titulo": "The One That Got Away",
+          "url": "https://www.youtube.com/watch?v=Ahha3Cqe_fk"
+        },
+        {
+          "titulo": "Pretty Hurts",
+          "url": "https://www.youtube.com/watch?v=LXXQLa-5n5w"
+        },
+        {
+          "titulo": "You Belong With Me",
+          "url": "https://www.youtube.com/watch?v=VuNIsY6JdUw"
+        },
+        {
+          "titulo": "Everything Has Changed",
+          "url": "https://www.youtube.com/watch?v=w1oM3kQpXRo"
+        },
+        {
+          "titulo": "When I Was Your Man",
+          "url": "https://www.youtube.com/watch?v=ekzHIouo8Q4"
+        },
+        {
+          "titulo": "Let Her Go",
+          "url": "https://www.youtube.com/watch?v=RBumgq5yVrA"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
+      "titulo": "Trilhas Sonoras",
+      "cor": "#A020F0",
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "Castle",
+          "url": "https://www.youtube.com/watch?v=Vk0xkd8qs9I"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Never Enough",
+          "url": "https://www.youtube.com/watch?v=6jZVsr7q-tE"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Flashlight",
+          "url": "https://www.youtube.com/watch?v=DzwkcbTQ7ZE"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Girassol",
+          "url": "https://www.youtube.com/watch?v=Iz5eH479-i8"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Don't Give Up On Me",
+          "url": "https://www.youtube.com/watch?v=UjnDpcgJXvA"
+        },
+        {
+          "titulo": "Can't Take My Eyes Off YoU",
+          "url": "https://www.youtube.com/watch?v=FeDakbkxkcc"
         }
       ]
     }

@@ -9,7 +9,6 @@ function getYouTubeId(youtubeURL) {
       '$7',
     );
 }
-
 export default function BannerMain({
   videoTitle,
   videoDescription,
