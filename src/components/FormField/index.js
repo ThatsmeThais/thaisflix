@@ -1,20 +1,20 @@
 import React from 'react';
+import { FormeFieldBase, InputField} from './styles';
 
 function FormField({ label, type, name, value, onChange}){
     return(
-        <div>
+        <FormeFieldBase>
             <label>
-                {label}: 
-                <input 
+                <InputField 
+                    placeholder={label}
                     type={type}
                     name={name}
                     value={value} 
                     onChange={onChange} 
                 />
             </label>
-        </div>
-    )
-
+        </FormeFieldBase>
+    );
 }
 
 export default FormField;

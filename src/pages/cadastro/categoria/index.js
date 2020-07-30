@@ -2,6 +2,7 @@ import React, { useState }from 'react';
 import PagesDefault from '../../../components/PagesDefault';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
+import { ButtonCadastro, H1Cadastro, PLink} from './style';
 
 function CadastroCategoria(){
     
@@ -30,7 +31,8 @@ function CadastroCategoria(){
 
     return(
         <PagesDefault>
-            <h1>Cadastro por Categoria: {values.nome} </h1>
+            
+            <H1Cadastro>Cadastro por Categoria: {values.nome} </H1Cadastro>
 
             <form onSubmit={ function handleSubmit(infoDoEvento) {
                 infoDoEvento.preventDefault();
@@ -48,18 +50,13 @@ function CadastroCategoria(){
                     value={values.nome}
                     onChange={handleChange}
                 />
-
-                <div>
-                    <label>
-                        Descrição:
-                        <textarea
-                            type="text" 
-                            name="descricao"
-                            value={values.descricao} 
-                            onChange={handleChange} 
-                        />
-                    </label>
-                </div>
+                <FormField
+                    label="Descrição"
+                    type="text"
+                    name="descricao" 
+                    value={values.descricao}
+                    onChange={handleChange}
+                />
 
                 <FormField
                     label="Cor"
@@ -69,9 +66,9 @@ function CadastroCategoria(){
                     onChange={handleChange}
                 />
 
-                <button>
-                    Cadastrar
-                </button>
+                <ButtonCadastro>
+                    CADASTRAR
+                </ButtonCadastro>
             </form>
             
             <ul>
@@ -85,7 +82,7 @@ function CadastroCategoria(){
             </ul>
 
             <Link to="/">
-                Ir para a home
+                <PLink>Voltar para home</PLink>
             </Link>
         </PagesDefault>
     )
