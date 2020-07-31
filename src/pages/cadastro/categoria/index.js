@@ -10,7 +10,8 @@ function CadastroCategoria(){
         nome:'',
         descricao:'',
         cor:'',
-    }
+    };
+
     const [categorias, setCategorias] = useState([]);
     const [values, setValues] = useState(valoresIniciais);
 
@@ -19,7 +20,7 @@ function CadastroCategoria(){
         setValues({
           ...values,
           [chave]: valor, // nome: 'valor'
-        })
+        });
       }
     
       function handleChange(infoDoEvento) {
@@ -40,7 +41,7 @@ function CadastroCategoria(){
                     ...categorias,
                     values
                 ]);
-                setValues(valoresIniciais)
+                setValues(valoresIniciais);
             }}>
             
                 <FormField

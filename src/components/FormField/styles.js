@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 
 
-export const FormeFieldBase = styled.form`
+export const FormeFieldBase = styled.div`
   color: var(--white);
   padding: 10px;
-  @media (max-width: 800px) {
-    margin-bottom: 20px;
+  position: relative;
+  textarea {
+    min-height: 150px;
+  }
+  input[type="color"] {
+    padding-left: 10px;
   }
 `;
 
 export const InputField = styled.input`
+  display:block;
   border-radius: 4px;
   width: 50%;
   height: 30px;
