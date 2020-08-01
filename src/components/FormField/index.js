@@ -22,6 +22,7 @@ function FormField({ label, type, name, value, onChange}){
                     value={value} 
                     hasValue = {hasValue}
                     onChange={onChange} 
+                    required
                 />
                 <Label.Text>
                     {label}

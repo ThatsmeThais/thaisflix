@@ -2,7 +2,7 @@ import React, { useState, useEffect }from 'react';
 import PagesDefault from '../../../components/PagesDefault';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
-import { ButtonCadastro, H1Cadastro, PLink, DivFundo} from './style';
+import { ButtonCadastro, H1Cadastro, PLink, DivFundo, TableCategoria, PCadastro} from './style';
 
 function CadastroCategoria(){
     
@@ -11,6 +11,7 @@ function CadastroCategoria(){
         descricao:'',
         cor:'',
     };
+
 
     const [categorias, setCategorias] = useState([]);
     const [values, setValues] = useState(valoresIniciais);
@@ -61,7 +62,7 @@ function CadastroCategoria(){
                 setValues(valoresIniciais);
             }}>
             
-                <FormField
+                <FormField 
                     label="Nome da Categoria"
                     type="text"
                     name="nome" 
@@ -87,6 +88,7 @@ function CadastroCategoria(){
                 <ButtonCadastro>
                     CADASTRAR
                 </ButtonCadastro>
+                
             </form>
             
             {categorias.length === 0 &&(
@@ -94,16 +96,18 @@ function CadastroCategoria(){
                     Carregando...
                 </div>)
             }
-
-            <ul>
+            <PCadastro>ITENS JÁ CADASTRADOS:</PCadastro>
+            <TableCategoria>
+                
                 {categorias.map((categoria) => {
                     return (
-                        <li key={`${categoria.nome}`}>
-                            {categoria.nome}
-                        </li>
+                        <tr key={`${categoria.nome}`}>
+                            <td>{categoria.nome}</td>
+                            <td class="de">{categoria.descricao}</td>
+                        </tr>
                     )
                 })}
-            </ul>
+            </TableCategoria>
 
             <PLink><Link to="/">Voltar para home</Link></PLink>
             
