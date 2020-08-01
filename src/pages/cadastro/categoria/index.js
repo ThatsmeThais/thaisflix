@@ -91,15 +91,16 @@ function CadastroCategoria(){
                 
             </form>
             
-            {categorias.length === 0 &&(
-                <div>
-                    Carregando...
-                </div>)
-            }
+            
             
 
             <ULCategoria>
                 <p>ITENS JÁ CADASTRADOS:</p>
+                {categorias.length === 0 &&(
+                <div>
+                    Carregando...
+                </div>)
+            }
                 {categorias.map((categoria) => {
                     return (
                         <li key={`${categoria.nome}`}>
