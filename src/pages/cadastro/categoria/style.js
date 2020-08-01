@@ -9,7 +9,6 @@ export const ButtonCadastro = styled.button`
     border-radius: 4px;
     font-size: 75%;
     font-weight: 500;
-    margin-left: 20px;
     margin-top: 20px;
     &:hover,
     &:focus {
@@ -18,13 +17,11 @@ export const ButtonCadastro = styled.button`
 `;
 
 export const H1Cadastro = styled.h1`
-    padding-left: 20px;
     font-size: 30px;
     font-weight: 500;
 `;
 
 export const PLink = styled.p`
-    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 12px;
@@ -35,5 +32,5 @@ export const DivFundo = styled.div`
     margin: 10vh  25%  10vh  25%;
     background-color: rgb(0,0,0,0.8);
     width: 50%;
-    padding: 10px 20px 10px 0px;
+    padding: 10px 20px 10px 20px;
 `;

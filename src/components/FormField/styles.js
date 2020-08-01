@@ -2,7 +2,8 @@ import styled, {css} from 'styled-components';
 
 export const FormeFieldBase = styled.div`
   color: var(--white);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   textarea {
     min-height: 150px;
@@ -22,7 +23,6 @@ Label.Text = styled.span`
   height: 30px;
   position: absolute; 
   top: 10px;
-  margin-left: 10px;
   padding-left: 10px;
   padding-right: 10px;
   
@@ -44,7 +44,6 @@ export const InputField = styled.input`
   height: 30px;
   background-color: rgb(220,220,220,0.1);
   border: 1px solid var(--white);
-  margin-left: 10px;
   padding-left: 10px;
   padding-right: 10px;
   color: var(--primary);
