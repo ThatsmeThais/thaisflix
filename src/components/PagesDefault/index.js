@@ -6,7 +6,7 @@ import img from '../../assets/img/fundo.jpg';
 
 const Main = styled.main`
     background-image: url(${img});
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100%;
     color: var(--white);
     flex: 1;

@@ -1,0 +1,46 @@
+{
+    "categorias":[
+        {   
+            "id": 1,
+            "nome": "Brasileiras calminhas",
+            "descricao":"musicas BR pra acalmar o coração",
+            "cor":"#4682B4"
+        },
+        {   
+            "id": 2,
+            "nome": "Brasileiras",
+            "descricao":"musicas BR animadinhas",
+            "cor":"#9cd33b"
+        },
+        {   
+            "id": 3,
+            "nome": "Poesia Acústica",
+            "descricao":"todas as musicas da poesia acústica",
+            "cor":"orange"
+        },  
+        {   
+            "id": 4,
+            "nome": "Avril Lavigne",
+            "descricao":"algumas musicas da Avril pros black stars pirarem",
+            "cor":"#DC143C"
+        } , 
+        {   
+            "id": 5,
+            "nome": "The lumineers",
+            "descricao":"algumas musicas da Avril pros black stars pirarem",
+            "cor":"#ad9e77"
+        },  
+        {   
+            "id": 6,
+            "nome": "Mix Internacional",
+            "descricao":"algumas musicas da Avril pros black stars pirarem",
+            "cor":"red"
+        },
+        {   
+            "id": 7,
+            "nome": "Trilhas Sonoras",
+            "descricao":"algumas musicas da Avril pros black stars pirarem",
+            "cor":"#A020F0"
+        }  
+    ]
+}
