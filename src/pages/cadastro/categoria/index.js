@@ -2,7 +2,8 @@ import React, { useState, useEffect }from 'react';
 import PagesDefault from '../../../components/PagesDefault';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
-import { ButtonCadastro, H1Cadastro, PLink, DivFundo, ULCategoria} from './style';
+import { ButtonCadastro, H1Cadastro, PLink, DivFundo, ULCategoria, ImgLoading} from './style';
+import img from '../../../assets/img/music1.png';
 
 function CadastroCategoria(){
     
@@ -97,9 +98,8 @@ function CadastroCategoria(){
             <ULCategoria>
                 <p>ITENS JÁ CADASTRADOS:</p>
                 {categorias.length === 0 &&(
-                <div>
-                    Carregando...
-                </div>)
+                <ImgLoading src={img}>
+                </ImgLoading>)
             }
                 {categorias.map((categoria) => {
                     return (
