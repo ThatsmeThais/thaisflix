@@ -103,7 +103,7 @@ function CadastroCategoria(){
                     return (
                         <tr key={`${categoria.nome}`}>
                             <td>{categoria.nome}</td>
-                            <td class="de">{categoria.descricao}</td>
+                            <td>{categoria.descricao}</td>
                         </tr>
                     )
                 })}
