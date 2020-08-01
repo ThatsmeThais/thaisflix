@@ -32,7 +32,9 @@ function CadastroCategoria(){
 
       useEffect(() => {
         if(window.location.href.includes('localhost')) {
-          const URL = 'https://thaisflix.herokuapp.com/categorias'; 
+          const URL = window.location.hostname.includes('localhost') 
+            ?'http://localhost:8080/categorias'
+            :'https://thaisflix.herokuapp.com/categorias'; 
           fetch(URL)
            .then(async (respostaDoServer) =>{
             if(respostaDoServer.ok) {
