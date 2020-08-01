@@ -10,7 +10,7 @@ function FormField({ label, type, name, value, onChange}){
     const hasValue = value.length;
 
     return(
-        <FormeFieldBase class="bgimg">
+        <FormeFieldBase className="bgimg">
             <label
                 htmlFor={fieldId}
             >

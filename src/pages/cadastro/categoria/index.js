@@ -2,7 +2,7 @@ import React, { useState, useEffect }from 'react';
 import PagesDefault from '../../../components/PagesDefault';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
-import { ButtonCadastro, H1Cadastro, PLink, DivFundo, TableCategoria, PCadastro} from './style';
+import { ButtonCadastro, H1Cadastro, PLink, DivFundo, ULCategoria} from './style';
 
 function CadastroCategoria(){
     
@@ -96,18 +96,18 @@ function CadastroCategoria(){
                     Carregando...
                 </div>)
             }
-            <PCadastro>ITENS JÁ CADASTRADOS:</PCadastro>
-            <TableCategoria>
-                
+            
+
+            <ULCategoria>
+                <p>ITENS JÁ CADASTRADOS:</p>
                 {categorias.map((categoria) => {
                     return (
-                        <tr key={`${categoria.nome}`}>
-                            <td>{categoria.nome}</td>
-                            <td>{categoria.descricao}</td>
-                        </tr>
+                        <li key={`${categoria.nome}`}>
+                            {categoria.nome}   |   {categoria.descricao}
+                        </li>
                     )
                 })}
-            </TableCategoria>
+            </ULCategoria>
 
             <PLink><Link to="/">Voltar para home</Link></PLink>
             

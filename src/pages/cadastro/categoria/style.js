@@ -38,22 +38,20 @@ export const DivFundo = styled.div`
     padding: 10px 20px 10px 20px;
 `;
 
-export const PCadastro = styled.p`
+export const ULCategoria = styled.ul`
+    list-style-type: none;
     font-size: 15px;
     font-weight: 500;
-`;
-
-export const TableCategoria = styled.table`
-    border: 1px solid var(--primary);
+    margin-left: -7%;
     border-collapse: collapse;
-    color:rgb(220,220,220,0.6);  
-    word-break: break-all;
-    max.width: 100%;
-    td{
-        font-size: 14px;
+    word-break: break-all; 
+    max.width:100%;
+    li{
+        color: rgb(220,220,220,0.8);
         border: 1px solid var(--primary);
-        padding: 8px;
+        padding: 6px;
         font-weight: normal;
         margin-right: 10px;
+        
     }
 `;
