@@ -4,10 +4,15 @@ import './index.css';
 import Home from './pages/home';
 import CadastroMusica from './pages/cadastro/musica'
 import CadastroCategoria from './pages/cadastro/categoria';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
 
 
-const Pagina404 = () => (<div>Pagina 404</div>);
+const Pagina404 = () => (
+  <div className="erro">
+    <p>Não encontramos o que queria, mas você pode ouvir uma musiquinha:</p>
+    <iframe className="video" title="musica" src="https://www.youtube.com/embed/JRfuAukYTKg?controls=0"></iframe>
+  </div>
+);
 
 ReactDOM.render(
   <BrowserRouter>

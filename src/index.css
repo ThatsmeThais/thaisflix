@@ -30,3 +30,11 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.erro{
+  color: var(--white);
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px;
+}
+
