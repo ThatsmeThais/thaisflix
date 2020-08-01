@@ -9,7 +9,8 @@ export const ButtonCadastro = styled.button`
     border-radius: 4px;
     font-size: 75%;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     &:hover,
     &:focus {
         opacity: .5;
