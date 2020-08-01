@@ -13,7 +13,7 @@ export const VideoCardContainer = styled.a`
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 2px;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -23,9 +23,14 @@ export const VideoCardContainer = styled.a`
   &:hover,
   &:focus {
     opacity: .5;
+    transform: scale(1.1);
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid;
   }
   
   &:not(:first-child) {
     margin-left: 20px;
   }
+  
 `;

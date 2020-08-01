@@ -35,6 +35,7 @@ export const SliderItem = styled.li`
     height: 197px;
     object-fit: cover;
   }
+  
 `;
 
 

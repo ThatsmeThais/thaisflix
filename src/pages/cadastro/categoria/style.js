@@ -18,6 +18,7 @@ export const ButtonCadastro = styled.button`
 `;
 
 export const H1Cadastro = styled.h1`
+    text-align: center;
     font-size: 30px;
     font-weight: 500;
 `;
