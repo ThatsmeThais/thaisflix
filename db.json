@@ -27,19 +27,19 @@
         {   
             "id": 5,
             "nome": "The lumineers",
-            "descricao":"algumas musicas da Avril pros black stars pirarem",
+            "descricao":"a ordem do melhor album da vida",
             "cor":"#ad9e77"
         },  
         {   
             "id": 6,
             "nome": "Mix Internacional",
-            "descricao":"algumas musicas da Avril pros black stars pirarem",
+            "descricao":"uma mix de musicas top dos gringo",
             "cor":"red"
         },
         {   
             "id": 7,
             "nome": "Trilhas Sonoras",
-            "descricao":"algumas musicas da Avril pros black stars pirarem",
+            "descricao":"algumas trilhas sonoras maras",
             "cor":"#A020F0"
         }  
     ]
