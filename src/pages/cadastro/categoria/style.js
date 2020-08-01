@@ -30,3 +30,10 @@ export const PLink = styled.p`
     font-size: 12px;
     font-weight: normal;
 `;
+
+export const DivFundo = styled.div`
+    margin: 10vh  25%  10vh  25%;
+    background-color: rgb(0,0,0,0.8);
+    width: 50%;
+    padding: 10px 20px 10px 0px;
+`;

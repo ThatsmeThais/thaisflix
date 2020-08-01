@@ -2,7 +2,7 @@ import React, { useState }from 'react';
 import PagesDefault from '../../../components/PagesDefault';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
-import { ButtonCadastro, H1Cadastro, PLink} from './style';
+import { ButtonCadastro, H1Cadastro, PLink, DivFundo} from './style';
 
 function CadastroCategoria(){
     
@@ -33,7 +33,7 @@ function CadastroCategoria(){
     return(
         <PagesDefault>
             
-            <H1Cadastro>Cadastro por Categoria: {values.nome} </H1Cadastro>
+            <DivFundo><H1Cadastro>Cadastro por Categoria: {values.nome} </H1Cadastro>
 
             <form onSubmit={ function handleSubmit(infoDoEvento) {
                 infoDoEvento.preventDefault();
@@ -53,7 +53,7 @@ function CadastroCategoria(){
                 />
                 <FormField
                     label="Descrição"
-                    type="text"
+                    type="textarea"
                     name="descricao" 
                     value={values.descricao}
                     onChange={handleChange}
@@ -73,18 +73,18 @@ function CadastroCategoria(){
             </form>
             
             <ul>
-                {categorias.map((categoria, indice) => {
+                {categorias.map((categoria) => {
                     return (
-                        <li key={`${categoria}${indice}`}>
+                        <li key={`${categoria.nome}`}>
                             {categoria.nome}
                         </li>
                     )
                 })}
             </ul>
 
-            <Link to="/">
-                <PLink>Voltar para home</PLink>
-            </Link>
+            <PLink><Link to="/">Voltar para home</Link></PLink>
+            
+            </DivFundo>
         </PagesDefault>
     )
 }

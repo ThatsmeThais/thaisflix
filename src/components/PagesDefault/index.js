@@ -2,9 +2,12 @@ import React from 'react';
 import Menu from '../Menu';
 import Footer from '../Footer';
 import styled from 'styled-components'
+import img from '../../assets/img/fundo.jpg';
 
 const Main = styled.main`
-    background-color: var(--black);
+    background-image: url(${img});
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: var(--white);
     flex: 1;
     padding-top: 50px;

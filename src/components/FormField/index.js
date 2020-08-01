@@ -1,24 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {FormeFieldBase, InputField} from './styles';
+import {FormeFieldBase, InputField, Label} from './styles';
 
 
 function FormField({ label, type, name, value, onChange}){
     const fieldId = ` id_${name}`;
+    const isTypeTextArea = type === 'textarea';
+    const tag = isTypeTextArea ? 'textarea' : 'input';
+    const hasValue = value.length;
 
     return(
-        <FormeFieldBase>
+        <FormeFieldBase class="bgimg">
             <label
                 htmlFor={fieldId}
             >
                 <InputField
+                    as={tag}
                     id={fieldId}
-                    placeholder={label}
                     type={type}
                     name={name}
                     value={value} 
+                    hasValue = {hasValue}
                     onChange={onChange} 
                 />
+                <Label.Text>
+                    {label}
+                     :
+                </Label.Text>
             </label>
         </FormeFieldBase>
     );
