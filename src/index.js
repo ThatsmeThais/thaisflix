@@ -10,7 +10,7 @@ import { BrowserRouter, Switch, Route} from 'react-router-dom';
 const Pagina404 = () => (
   <div className="erro">
     <p>Não encontramos o que queria, mas você pode ouvir uma musiquinha:</p>
-    <iframe className="video" title="musica" src="https://www.youtube.com/embed/JRfuAukYTKg?controls=0"></iframe>
+    <iframe title="musica" src="https://www.youtube.com/embed/JRfuAukYTKg?controls=0"></iframe>
   </div>
 );
 

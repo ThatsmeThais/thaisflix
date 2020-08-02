@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import { ButtonCadastro, H1Cadastro, PLink, DivFundo, ULCategoria, ImgLoading} from './style';
 import img from '../../../assets/img/music1.png';
+import useForm from '../../../hooks/useForm';
 
-function CadastroCategoria(){
+    
+    function CadastroCategoria(){
     
     const valoresIniciais = {
         nome:'',
@@ -13,24 +15,10 @@ function CadastroCategoria(){
         cor:'',
     };
 
-
+    const {handleChange, values, clearForm} =  useForm(valoresIniciais);
     const [categorias, setCategorias] = useState([]);
-    const [values, setValues] = useState(valoresIniciais);
-
-    function setValue(chave, valor) {
-        // chave: nome, descricao, bla, bli
-        setValues({
-          ...values,
-          [chave]: valor, // nome: 'valor'
-        });
-      }
     
-      function handleChange(infoDoEvento) {
-        setValue(
-          infoDoEvento.target.getAttribute('name'),
-          infoDoEvento.target.value
-        );
-      }
+
       useEffect(() => {
         const URL_TOP = window.location.hostname.includes('localhost')
           ? 'http://localhost:8080/categorias'
@@ -54,7 +42,7 @@ function CadastroCategoria(){
                     ...categorias,
                     values
                 ]);
-                setValues(valoresIniciais);
+                clearForm(valoresIniciais);
             }}>
             
                 <FormField 
