@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Menu from '../../components/Menu/index';
 import dadosIniciais from '../../data/dados_iniciais.json'
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import Footer from '../../components/Footer';
+import categoriasRepository from '../../repositories/categorias';
 
 function Home() {
+
+  useEffect(() => {
+    categoriasRepository.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        console.log(categoriasComVideos);
+      });
+  });
+
   return (
     <div>
       <Menu />
@@ -13,7 +22,7 @@ function Home() {
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Minha playlist inicia com a minha cantora favorita: Avril Lavigne (A mulher nunca envelhece, loucura !!). E vamos de uma bem animada e nostalgica pra vocês, espero que gostem!"}
+        videoDescription="Minha playlist inicia com a minha cantora favorita: Avril Lavigne (A mulher nunca envelhece, loucura !!). E vamos de uma bem animada e nostalgica pra vocês, espero que gostem!"
       />
       
       <Carousel

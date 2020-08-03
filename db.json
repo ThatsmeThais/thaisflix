@@ -43,7 +43,7 @@
             "cor":"#A020F0"
         }  
     ],
-    "videos": [
+    "musicas": [
         {
             "id": 1,
             "categoriaId": 1,
@@ -481,7 +481,7 @@
             "categoriaId": 6,
             "titulo": "Let Her Go",
             "url": "https://www.youtube.com/watch?v=RBumgq5yVrA"
-        } 
+        }, 
         {
             "id": 74,
             "categoriaId": 7,
