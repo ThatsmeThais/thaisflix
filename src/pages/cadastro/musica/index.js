@@ -8,9 +8,9 @@ import videosRepository from '../../../repositories/musicas';
 import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroMusica(){
+    
     const history = useHistory();
     const [categorias, setCategorias] = useState([]);
-
 
     const categoryTitles = categorias.map(({ nome }) => nome);
 
@@ -19,7 +19,7 @@ function CadastroMusica(){
         url: '',
         categorias: '',
     });
-
+    
     useEffect(() => {
         categoriasRepository
             .getAll()
@@ -35,22 +35,8 @@ function CadastroMusica(){
             <form onSubmit={(event) => {
                 event.preventDefault();
                 
-                //alert('Video Cadastrado com sucesso!!!1!');
-                [
-                    'primary',
-                    'secondary',
-                    'success',
-                    'danger',
-                    'warning',
-                    'info',
-                    'light',
-                    'dark',
-                  ].map((variant, idx) => (
-                    <alert key={idx} variant={variant}>
-                      This is a {variant} alert—check it out!
-                    </alert>
-                  ));
-
+                
+                
                 const categoriaEscolhida = categorias.find((categoria) => {
                     return categoria.nome === values.categorias;
                 });
@@ -87,7 +73,7 @@ function CadastroMusica(){
                     onChange={handleChange}
                     suggestions={categoryTitles}
                 />
-
+                
                 <ButtonCadastro type="submit">
                     CADASTRAR
                 </ButtonCadastro>

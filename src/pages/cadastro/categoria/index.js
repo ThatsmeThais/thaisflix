@@ -1,49 +1,62 @@
 import React, { useState, useEffect }from 'react';
 import PagesDefault from '../../../components/PagesDefault';
-import { Link } from 'react-router-dom';
+import { Link , useHistory} from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import { ButtonCadastro, H1Cadastro, PLink, DivFundo, ULCategoria, ImgLoading} from './style';
 import img from '../../../assets/img/music1.png';
 import useForm from '../../../hooks/useForm';
-
+import categoryRepository from '../../../repositories/categorias';
     
-    function CadastroCategoria(){
+function CadastroCategoria(){
     
-    const valoresIniciais = {
+    const history = useHistory();
+    const { handleChange, values} = useForm({
         nome:'',
         descricao:'',
         cor:'',
-    };
+    });
 
-    const {handleChange, values, clearForm} =  useForm(valoresIniciais);
+    //const {handleChange, values, clearForm} =  useForm(valoresIniciais);
     const [categorias, setCategorias] = useState([]);
-    
 
-      useEffect(() => {
-        const URL_TOP = window.location.hostname.includes('localhost')
-          ? 'http://localhost:8080/categorias'
-          : 'https://thaisflix.herokuapp.com/categorias';
-        fetch(URL_TOP)
-          .then(async (respostaDoServidor) => {
-            const resposta = await respostaDoServidor.json();
-            setCategorias([
-              ...resposta,
-            ]);
-        });
-      }, []);
+    useEffect(() => {
+        categoryRepository
+            .getAll()
+            .then((categoriasFromServer) => {
+                setCategorias(categoriasFromServer);
+            })
+    },[]);
+    
     return(
         <PagesDefault>
             
             <DivFundo><H1Cadastro>Cadastro por Categoria: {values.nome} </H1Cadastro>
 
-            <form onSubmit={ function handleSubmit(infoDoEvento) {
+            
+            
+            {/*<form onSubmit={ function handleSubmit(infoDoEvento) {
                 infoDoEvento.preventDefault();
                 setCategorias([
                     ...categorias,
                     values
                 ]);
                 clearForm(valoresIniciais);
-            }}>
+            }}>*/}
+            <form onSubmit={(event) => {
+                event.preventDefault();
+                
+                categoryRepository.create({
+                    nome:values.nome,
+                    descricao:values.descricao,
+                    cor:values.cor,
+                })
+                .then(() => {
+                    console.log('Cadastrou com sucesso!');
+                    history.push('/');
+                  });
+                }
+            } 
+            >
             
                 <FormField 
                     label="Nome da Categoria"
@@ -68,7 +81,7 @@ import useForm from '../../../hooks/useForm';
                     onChange={handleChange}
                 />
 
-                <ButtonCadastro>
+                <ButtonCadastro type="submit">
                     CADASTRAR
                 </ButtonCadastro>
                 
