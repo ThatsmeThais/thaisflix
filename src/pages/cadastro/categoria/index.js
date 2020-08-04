@@ -105,7 +105,7 @@ function CadastroCategoria(){
                 })}
             </ULCategoria>
 
-            <PLink><Link to="/">Voltar para home</Link></PLink>
+            <PLink><Link to="/">Voltar para home</Link>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<Link to="/cadastro/musica">Voltar para cadastro musicas</Link></PLink>
             
             </DivFundo>
         </PagesDefault>
