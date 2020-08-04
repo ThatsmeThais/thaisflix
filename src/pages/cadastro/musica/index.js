@@ -80,7 +80,7 @@ function CadastroMusica(){
             </form>
 
 
-            <PLink><Link to="/cadastro/categoria">Cadastrar Categoria</Link></PLink>
+            <PLink><Link to="/">Voltar para home</Link>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<Link to="/cadastro/categoria">Cadastrar Categoria</Link></PLink>
             </DivFundo>
         </PagesDefault>
     )
