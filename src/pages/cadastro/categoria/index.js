@@ -45,6 +45,8 @@ function CadastroCategoria(){
             <form onSubmit={(event) => {
                 event.preventDefault();
                 
+                alert('Video Cadastrado amigx!!!!');
+                
                 categoryRepository.create({
                     nome:values.nome,
                     descricao:values.descricao,

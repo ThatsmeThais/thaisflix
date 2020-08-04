@@ -35,7 +35,7 @@ function CadastroMusica(){
             <form onSubmit={(event) => {
                 event.preventDefault();
                 
-                
+                alert('Video Cadastrado amigx!!!!');
                 
                 const categoriaEscolhida = categorias.find((categoria) => {
                     return categoria.nome === values.categorias;
