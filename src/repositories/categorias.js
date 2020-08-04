@@ -1,15 +1,32 @@
-import config from '../config/index';
+import config from '../config';
 
-const URL_CATEGORIES = `${config.URL_BACKEND_TOP}/categorias?_embed=musicas`;
+const URL_CATEGORIES = `${config.URL_BACKEND_TOP}/categorias`;
 
-function getAllWithVideos(){
-    console.log();
-    return fetch(URL_CATEGORIES)
-        .then(async (respostaDoServidor) => {
-            const resposta = await respostaDoServidor.json();
-            return resposta;
+function getAll() {
+  return fetch(`${URL_CATEGORIES}`)
+    .then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        return resposta;
+      }
+
+      throw new Error('Não foi possível pegar os dados :(');
     });
 }
-export default{
-    getAllWithVideos,
+
+function getAllWithMusicas() {
+  return fetch(`${URL_CATEGORIES}?_embed=musicas`)
+    .then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        return resposta;
+      }
+
+      throw new Error('Não foi possível pegar os dados :(');
+    });
+}
+
+export default {
+  getAllWithMusicas,
+  getAll,
 };

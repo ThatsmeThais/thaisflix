@@ -1,13 +1,79 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import PagesDefault from '../../../components/PagesDefault';
-import { Link } from 'react-router-dom';
-import { H1Cadastro, PLink, DivFundo} from '../categoria/style';
+import { Link , useHistory} from 'react-router-dom';
+import { H1Cadastro, PLink, DivFundo, ButtonCadastro} from '../categoria/style';
+import FormField from '../../../components/FormField';
+import useForm from '../../../hooks/useForm';
+import videosRepository from '../../../repositories/musicas';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroMusica(){
+    const history = useHistory();
+    const [categorias, setCategorias] = useState([]);
+
+    const { handleChange, values} = useForm({
+        titulo: '',
+        url: '',
+        categorias: '',
+    });
+
+    useEffect(() => {
+        categoriasRepository
+            .getAll()
+            .then((categoriasFromServer) => {
+                setCategorias(categoriasFromServer);
+            })
+    },[]);
+
     return(
         <PagesDefault>
             <DivFundo><H1Cadastro>Cadastro de Musicas</H1Cadastro>
-            
+
+            <form onSubmit={(event) => {
+                event.preventDefault();
+                //alert('Video Cadastrado com sucesso!!!!');
+
+                const categoriaEscolhida = categorias.find((categoria) => {
+                    return categoria.titulo === values.categoria;
+                });
+
+                videosRepository.create({
+                    titulo: values.titulo,
+                    url: values.url,
+                    categoriaId: categoriaEscolhida.id,
+                })
+                .then(() => {
+                    history.push('/');
+                });
+            }}
+            >
+                <FormField
+                    label="Títudo do video"
+                    name="titulo" 
+                    value={values.titulo}
+                    onChange={handleChange}
+                />
+
+                <FormField
+                    label="URL"
+                    name="url" 
+                    value={values.url}
+                    onChange={handleChange}
+                />
+
+                <FormField
+                    label="Categoria"
+                    name="categorias" 
+                    value={values.categorias}
+                    onChange={handleChange}
+                />
+
+                <ButtonCadastro type="submit">
+                    CADASTRAR
+                </ButtonCadastro>
+            </form>
+
+
             <PLink><Link to="/cadastro/categoria">Cadastrar Categoria</Link></PLink>
             </DivFundo>
         </PagesDefault>
