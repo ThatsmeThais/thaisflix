@@ -11,6 +11,9 @@ function CadastroMusica(){
     const history = useHistory();
     const [categorias, setCategorias] = useState([]);
 
+
+    const categoryTitles = categorias.map(({ nome }) => nome);
+
     const { handleChange, values} = useForm({
         titulo: '',
         url: '',
@@ -24,17 +27,32 @@ function CadastroMusica(){
                 setCategorias(categoriasFromServer);
             })
     },[]);
-
+    
     return(
         <PagesDefault>
             <DivFundo><H1Cadastro>Cadastro de Musicas</H1Cadastro>
 
             <form onSubmit={(event) => {
                 event.preventDefault();
-                //alert('Video Cadastrado com sucesso!!!!');
+                
+                //alert('Video Cadastrado com sucesso!!!1!');
+                [
+                    'primary',
+                    'secondary',
+                    'success',
+                    'danger',
+                    'warning',
+                    'info',
+                    'light',
+                    'dark',
+                  ].map((variant, idx) => (
+                    <alert key={idx} variant={variant}>
+                      This is a {variant} alert—check it out!
+                    </alert>
+                  ));
 
                 const categoriaEscolhida = categorias.find((categoria) => {
-                    return categoria.titulo === values.categoria;
+                    return categoria.nome === values.categorias;
                 });
 
                 videosRepository.create({
@@ -43,29 +61,31 @@ function CadastroMusica(){
                     categoriaId: categoriaEscolhida.id,
                 })
                 .then(() => {
+                    console.log('Cadastrou com sucesso!');
                     history.push('/');
-                });
-            }}
+                  });
+              }}
             >
                 <FormField
-                    label="Títudo do video"
-                    name="titulo" 
+                    label="Título do Vídeo"
+                    name="titulo"
                     value={values.titulo}
                     onChange={handleChange}
                 />
 
                 <FormField
                     label="URL"
-                    name="url" 
+                    name="url"
                     value={values.url}
                     onChange={handleChange}
                 />
-
+                
                 <FormField
                     label="Categoria"
                     name="categorias" 
                     value={values.categorias}
                     onChange={handleChange}
+                    suggestions={categoryTitles}
                 />
 
                 <ButtonCadastro type="submit">
